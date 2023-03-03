@@ -1,0 +1,13 @@
+
+.cim {
+    font-size: 24px;
+    font-weight: bold;
+}
+.bekezdes {
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px;
+}
+body {
+    background-color: beige;
+}

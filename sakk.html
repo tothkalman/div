@@ -6,38 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakktábla</title>
     <style>
-        .table {
+        .sakkTable {
             border: 1px outset;
+            
+        }
+        td {
+            border: 1px outset;
+        }
+        .tr1:nth-child(odd) .td1:nth-child(even),
+        .tr1:nth-child(even) .td1:nth-child(odd) {
+            background-color: gray;
+            width: 50px;
+            height: 50px;
+        }
+        .tr1:nth-child(odd) .td1:nth-child(odd),
+        .tr1:nth-child(even) .td1:nth-child(even) {
+            background-color: wheat;
+            width: 50px;
+            height: 50px;
+        }
+        th {
+            border: 1px outset;
+            background-color: beige;
+            width: 50px;
+            height: 50px;
+        }
+        .fejen {
+            rotate: 180deg;
         }
     </style>
 </head>
 <body>
-<!-- table>(tr>td*4)*4 -->
-    <table>
+<!-- table.sakkTable>(tr>td*8)*8 -->
+<!-- table.sakkTable>(tr.tr1>td.td1*8)*8 -->
+<!-- table.sakkTable>(tr>th*4)(tr.tr1>td.td1*4)*4(tr>th*4) -->
+<!-- table.sakkTable>(tr>th*8)(tr.tr1>th*1td.td1*8th*1)*8(tr>th*8)*1 -->
+<div align="center">
+    <table class="sakkTable">
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th></th>
+            <th class="fejen">a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+            <th>e</th>
+            <th>f</th>
+            <th>g</th>
+            <th>h</th>
+            <th></th>
+        </tr>
+        <tr class="tr1">
+            <th>8</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>8</th>
+        </tr>
+        <tr class="tr1">
+            <th>7</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>7</th>
+        </tr>
+        <tr class="tr1">
+            <th>6</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>6</th>
+        </tr>
+        <tr class="tr1">
+            <th>5</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>5</th>
+        </tr>
+        <tr class="tr1">
+            <th>4</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>4</th>
+        </tr>
+        <tr class="tr1">
+            <th>3</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>3</th>
+        </tr>
+        <tr class="tr1">
+            <th>2</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>2</th>
+        </tr>
+        <tr class="tr1">
+            <th>1</th>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <td class="td1"></td>
+            <th>1</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th></th>
+            <th>a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+            <th>e</th>
+            <th>f</th>
+            <th>g</th>
+            <th>h</th>
+            <th></th>
         </tr>
     </table>
+</div>
 </body>
 </html>
